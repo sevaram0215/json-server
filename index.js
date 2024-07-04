@@ -18,8 +18,8 @@ async function postData() {
     photo: document.getElementById("photo").value,
   };
   try {
-    let res = await axios.post("http://localhost:8080/user", obj);
-    alert("submitted");
+    let res = await axios.post("http://localhost:3080/user", obj);
+    // alert("submitted");
   } catch (error) {
     console.log("error");
   }
@@ -27,7 +27,7 @@ async function postData() {
 
 async function getData() {
   try {
-    let res = await axios.get("http://localhost:8080/user");
+    let res = await axios.get("http://localhost:3080/user");
     console.log(res.data);
     arr = res.data;
     displyData(arr);
@@ -40,7 +40,7 @@ getData();
 
 async function deletData(id){
     try{
-        let res = await axios.delete(`http://localhost:8080/user/${id}`)
+        let res = await axios.delete(`http://localhost:3080/user/${id}`)
         alert("deleted")
         getData()
     }
@@ -98,7 +98,7 @@ async function updateData(){
         photo: document.getElementById("photo").value,
     };
     try {
-        let res =await axios.patch(`http://localhost:8080/user/${currentId}`,updateobj);
+        let res =await axios.patch(`http://localhost:3080/user/${currentId}`,updateobj);
         state=false
     }
     catch (err) {
@@ -108,9 +108,13 @@ async function updateData(){
 }
 btn.addEventListener("click",()=>{
     if(state===true){
-        updateData()}
+        updateData()
+        alert("submitted");}
+       
         else{
             postData()
+          
         }
+        alert("submitted")
 });
 // btn.addEventListener("click", postData);
