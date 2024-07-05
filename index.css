@@ -9,7 +9,7 @@ nav{
     z-index: 5;
     display: flex;
     justify-content: space-between;
-    background-color: rgba(220, 236, 119, 0.831);
+    background-color: rgba(221, 226, 188, 0.831);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
     #nav_image{
@@ -58,7 +58,7 @@ nav{
     }
     a{
       text-decoration: none;
-      color: rgb(32, 29, 29);
+      color: rgb(32, 29, 29); 
     }
     span{
         display: none;
@@ -89,7 +89,8 @@ form{
     border: 2px solid rgb(221, 210, 210);
     width: 30%;
     margin: auto;
-    margin-top: 20PX;
+    margin-top: 60PX;
+    margin-bottom: 40px;
     padding: 2%;
     background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAlAMBIgACEQEDEQH/xAAaAAEBAQEBAQEAAAAAAAAAAAADAgABBAYF/8QAHRABAQEAAgMBAQAAAAAAAAAAAAECAxEhMUESYf/EABoBAQADAQEBAAAAAAAAAAAAAAIAAQMFBAb/xAAYEQEBAQEBAAAAAAAAAAAAAAAAAQIRA//aAAwDAQACEQMRAD8A+whMjhMtnbpMlyLJchWdJkuRZLkKzq4WDi8hQpITIoTI0CRUTFQaNUqekxUUDsd+OMiMzMimZmQXx+S5oskw9zr0uS5FkuQrKkySDyTIVnSQmRwkCgvJIPJIoKuLiIuAKlRKooK6zMiMzMgszMinxuabAMGw99demyWByXIVlSZJmjyvPsLApZSQcXkKFLlco8rg1nSRcRFwKKu1xMVFBXXXI6pHGjVviBWcZkU+NwfIMmy6NdmkyaByWBWVhIvPseSZGwKWLg4uUOM6WLg8+yQApMkyLJMhQq4uIi4IOx1yOqU1cdrlQa4zMinx0JgcJl07HZpc+l5FCZoWM6aLgsrl8hwKbKoOUko2M6XNJmhyTNZ2BSwmRQmQoUsVlGSZChXXXFCLn1KvqUGszMgvjovN8Iio6vHapZVZRmryPApJSZFCZGwKWVcoouUbGdNmkyHJIzsCmhMhzS5rOxnS5JmizSSs6FJHXI6FFy+3Ha5VDXGZli+OVEux2OO0SKlHKSDYNXmklFFyjwKWUkoZVyjxnTykzQSkzQsZ0+S5Bmlze2WoFPlcFkuWVCljqYtlQcTVJojXGZxYvjo7HO3XbdtcVKOKiuBSSrlFKqVOM6aVWaCaXKNjK16M0krzzS86C5Z2vTmmxXmzoudf1lrIdevNJmvPjR8VhqKp8rHkkYUKyapOgGoZmWD413tHbdu9x3Cduyj7btfGeqXt3sP6d/ScY2l7XNPP+lTSrllqvRNEm3lml50NyytezOjY08Odm49stZDr9DGno475fn8e/L1cW3n3lXXvxYWPNxaejDybi1I0tOmQ0bMywfFOMz6F2qzlrMtlWld7cZbLTvbSsymOlyqlZlMqvNpsWszOsz4t7erhtZmG1Pbw2vZhmeL0OLTp1nmqUbMygf/Z);
     background-repeat: no-repeat;
@@ -106,7 +107,7 @@ input{
 }
 #btn{
   
-    border: 2px solid rebeccapurple;
+    /* border: 2px solid rebeccapurple; */
     margin-left: 40%;
     height: 30px;
     width: 100px;
@@ -142,7 +143,7 @@ img:hover{
 }
 button{
   
-    border: 2px solid rebeccapurple;
+    /* border: 2px solid rebeccapurple; */
     
     height: 30px;
     width: 100px;

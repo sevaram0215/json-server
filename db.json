@@ -13,12 +13,6 @@
       "photo": "https://images.pexels.com/photos/1148998/pexels-photo-1148998.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
-      "id": "ccc7",
-      "name": "Pet bul",
-      "email": "ramjpr0592@gmail.com",
-      "photo": "https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg?auto=compress&cs=tinysrgb&w=600"
-    },
-    {
       "id": "c3e1",
       "name": "Red Flower",
       "email": "ramjpr0592@gmail.com",
@@ -71,6 +65,12 @@
       "name": "manoj kumar",
       "email": "ramjpr0592@gmail.com",
       "photo": "https://images.pexels.com/photos/5642191/pexels-photo-5642191.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      "id": "f2f4",
+      "name": "sevaram bhakha",
+      "email": "7062852770",
+      "photo": "https://images.unsplash.com/photo-1619995745882-f4128ac82ad6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFja2dyb3VuZCUyMGltYWdlfGVufDB8fDB8fHww"
     }
   ]
 }

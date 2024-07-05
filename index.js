@@ -18,7 +18,7 @@ async function postData() {
     photo: document.getElementById("photo").value,
   };
   try {
-    let res = await axios.post("http://localhost:3080/user", obj);
+    let res = await axios.post("https://jsaonserversetup-1.onrender.com/user/", obj);
     // alert("submitted");
   } catch (error) {
     console.log("error");
@@ -27,7 +27,7 @@ async function postData() {
 
 async function getData() {
   try {
-    let res = await axios.get("http://localhost:3080/user");
+    let res = await axios.get("https://jsaonserversetup-1.onrender.com/user");
     console.log(res.data);
     arr = res.data;
     displyData(arr);
@@ -40,7 +40,7 @@ getData();
 
 async function deletData(id){
     try{
-        let res = await axios.delete(`http://localhost:3080/user/${id}`)
+        let res = await axios.delete(`https://jsaonserversetup-1.onrender.com/user/${id}`)
         alert("deleted")
         getData()
     }
@@ -98,8 +98,9 @@ async function updateData(){
         photo: document.getElementById("photo").value,
     };
     try {
-        let res =await axios.patch(`http://localhost:3080/user/${currentId}`,updateobj);
+        let res =await axios.patch(`https://jsaonserversetup-1.onrender.com/user/${currentId}`,updateobj);
         state=false
+       
     }
     catch (err) {
         console.log(err);
@@ -109,12 +110,14 @@ async function updateData(){
 btn.addEventListener("click",()=>{
     if(state===true){
         updateData()
-        alert("submitted");}
+        alert("update");
+      }
        
         else{
             postData()
+            alert("submitted")
           
         }
-        alert("submitted")
+   
 });
 // btn.addEventListener("click", postData);
