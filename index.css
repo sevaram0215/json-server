@@ -64,27 +64,7 @@ nav{
         display: none;
     }
 
-
-#cont{
-    /* border: 2px solid red; */
-    width: 90%;
-    display: grid;
- grid-template-columns: repeat(4,1fr);
- margin: auto;
- align-items: center;
-
-}
-
-#card_div{
- 
-border: 1px solid rgb(210, 187, 187);
-margin: 5px;
- /* align-items: center; */
- text-align: center;
- border-radius: 10px 30px 5px 30px;
- overflow: hidden;
-
-}
+    
 form{
     border: 2px solid rgb(221, 210, 210);
     width: 30%;
@@ -117,6 +97,42 @@ input{
   font-size: 15px;
   
 }
+
+
+#cont{
+    /* border: 2px solid red; */
+    width: 90%;
+    display: grid;
+ grid-template-columns: repeat(4,1fr);
+ margin: auto;
+ align-items: center;
+
+}
+
+#card_div{
+ 
+border: 1px solid rgb(210, 187, 187);
+margin: 5px;
+ /* align-items: center; */
+ text-align: center;
+
+ overflow: hidden;
+}
+#card_div:nth-child(odd){
+    /* border: 2px solid red; */
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 30px 20px 30px 10px;
+  margin: 5px;
+
+}
+#card_div:nth-child(even){
+    /* border: 2px solid rgb(46, 196, 29); */
+    border-radius: 10px 30px 10px 30px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+ 
+
+
 #btn:hover,#delet:hover,#edit:hover{
 background-color: rgb(10, 10, 10);
 cursor: pointer;
@@ -126,6 +142,7 @@ color: white;
 #nature_tag_line{
     border: 2px solid rgb(221, 210, 210);
     text-align: center;
+    background-color: aliceblue;
 }
 img{
     width: 95%;
@@ -150,23 +167,181 @@ button{
     
   
 }
-#delet{
+#delet,#edit{
  
     font-size: 20px;
     margin: 5px;
     border-radius: 10px;
     transition: all 3s;
 }
-#edit{
- 
-    font-size: 20px;
-    margin: 5px;
-    border-radius: 10px;
-    transition: all 3s;
-}
+
+
 h2{
     margin-top: -5px;
 }
 h3{
     margin-top: -15px;
+}
+@media screen and (min-width: 200px) and (max-width: 757px){
+    
+    nav{
+   
+        height: auto;
+        width: 99%;
+        margin: auto;
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(216, 195, 214, 0.831);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+        #ul_div{
+       display: none;
+      }
+      span{
+        display: block;
+        
+        margin-top: 30px;
+        margin-right: 10px;
+        font-size: 35px;
+    }
+    #nav_image{
+     margin-top: 20px;
+       width: 20%;
+       /* border: 2px solid red; */
+   }
+   #h1_div{
+    width: 40%;
+    
+    text-align: center;
+   padding-top: 10px;
+    /* border: 2px solid rgb(15, 0, 128); */
+    font-size: 20px;
+    
+  }
+  form{
+    border: 2px solid rgb(221, 210, 210);
+    width: 90%;
+    margin: auto;
+    margin-top: 60PX;
+    margin-bottom: 40px;
+    padding: 2%;
+    background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAlAMBIgACEQEDEQH/xAAaAAEBAQEBAQEAAAAAAAAAAAADAgABBAYF/8QAHRABAQEAAgMBAQAAAAAAAAAAAAECAxEhMUESYf/EABoBAQADAQEBAAAAAAAAAAAAAAIAAQMFBAb/xAAYEQEBAQEBAAAAAAAAAAAAAAAAAQIRA//aAAwDAQACEQMRAD8A+whMjhMtnbpMlyLJchWdJkuRZLkKzq4WDi8hQpITIoTI0CRUTFQaNUqekxUUDsd+OMiMzMimZmQXx+S5oskw9zr0uS5FkuQrKkySDyTIVnSQmRwkCgvJIPJIoKuLiIuAKlRKooK6zMiMzMgszMinxuabAMGw99demyWByXIVlSZJmjyvPsLApZSQcXkKFLlco8rg1nSRcRFwKKu1xMVFBXXXI6pHGjVviBWcZkU+NwfIMmy6NdmkyaByWBWVhIvPseSZGwKWLg4uUOM6WLg8+yQApMkyLJMhQq4uIi4IOx1yOqU1cdrlQa4zMinx0JgcJl07HZpc+l5FCZoWM6aLgsrl8hwKbKoOUko2M6XNJmhyTNZ2BSwmRQmQoUsVlGSZChXXXFCLn1KvqUGszMgvjovN8Iio6vHapZVZRmryPApJSZFCZGwKWVcoouUbGdNmkyHJIzsCmhMhzS5rOxnS5JmizSSs6FJHXI6FFy+3Ha5VDXGZli+OVEux2OO0SKlHKSDYNXmklFFyjwKWUkoZVyjxnTykzQSkzQsZ0+S5Bmlze2WoFPlcFkuWVCljqYtlQcTVJojXGZxYvjo7HO3XbdtcVKOKiuBSSrlFKqVOM6aVWaCaXKNjK16M0krzzS86C5Z2vTmmxXmzoudf1lrIdevNJmvPjR8VhqKp8rHkkYUKyapOgGoZmWD413tHbdu9x3Cduyj7btfGeqXt3sP6d/ScY2l7XNPP+lTSrllqvRNEm3lml50NyytezOjY08Odm49stZDr9DGno475fn8e/L1cW3n3lXXvxYWPNxaejDybi1I0tOmQ0bMywfFOMz6F2qzlrMtlWld7cZbLTvbSsymOlyqlZlMqvNpsWszOsz4t7erhtZmG1Pbw2vZhmeL0OLTp1nmqUbMygf/Z);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 30px 5px 30px;
+}
+#h3_div{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+input{
+    width: 80%;
+    margin-top: 10px;
+}
+
+#cont{
+    /* border: 2px solid red; */
+    width: 90%;
+    display: grid;
+ grid-template-columns: repeat(1,1fr);
+ margin: auto;
+ align-items: center;
+
+}
+#nature_tag_line{
+
+    background-color: rgb(233, 236, 182);
+    border-radius: 20px 30px 20px 35px;
+}
+
+#card_div{
+ 
+border: 1px solid rgb(210, 187, 187);
+margin: 5px;
+ /* align-items: center; */
+ text-align: center;
+ border-radius: 10px 30px 5px 30px;
+ overflow: hidden;
+
+}
+
+}
+
+@media screen and (min-width: 758px) and (max-width: 1024px){
+    
+    nav{
+   
+        height: auto;
+        width: 99%;
+        margin: auto;
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(216, 195, 214, 0.831);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+        #ul_div{
+       display: none;
+      }
+      span{
+        display: block;
+        
+        margin-top: 30px;
+        margin-right: 10px;
+        font-size: 35px;
+    }
+    #nav_image{
+     margin-top: 20px;
+       width: 20%;
+       /* border: 2px solid red; */
+   }
+   #h1_div{
+    width: 40%;
+    
+    text-align: center;
+   padding-top: 10px;
+    /* border: 2px solid rgb(15, 0, 128); */
+    font-size: 20px;
+    
+  }
+  form{
+    border: 2px solid rgb(221, 210, 210);
+    width: 90%;
+    margin: auto;
+    margin-top: 60PX;
+    margin-bottom: 40px;
+    padding: 2%;
+    background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAlAMBIgACEQEDEQH/xAAaAAEBAQEBAQEAAAAAAAAAAAADAgABBAYF/8QAHRABAQEAAgMBAQAAAAAAAAAAAAECAxEhMUESYf/EABoBAQADAQEBAAAAAAAAAAAAAAIAAQMFBAb/xAAYEQEBAQEBAAAAAAAAAAAAAAAAAQIRA//aAAwDAQACEQMRAD8A+whMjhMtnbpMlyLJchWdJkuRZLkKzq4WDi8hQpITIoTI0CRUTFQaNUqekxUUDsd+OMiMzMimZmQXx+S5oskw9zr0uS5FkuQrKkySDyTIVnSQmRwkCgvJIPJIoKuLiIuAKlRKooK6zMiMzMgszMinxuabAMGw99demyWByXIVlSZJmjyvPsLApZSQcXkKFLlco8rg1nSRcRFwKKu1xMVFBXXXI6pHGjVviBWcZkU+NwfIMmy6NdmkyaByWBWVhIvPseSZGwKWLg4uUOM6WLg8+yQApMkyLJMhQq4uIi4IOx1yOqU1cdrlQa4zMinx0JgcJl07HZpc+l5FCZoWM6aLgsrl8hwKbKoOUko2M6XNJmhyTNZ2BSwmRQmQoUsVlGSZChXXXFCLn1KvqUGszMgvjovN8Iio6vHapZVZRmryPApJSZFCZGwKWVcoouUbGdNmkyHJIzsCmhMhzS5rOxnS5JmizSSs6FJHXI6FFy+3Ha5VDXGZli+OVEux2OO0SKlHKSDYNXmklFFyjwKWUkoZVyjxnTykzQSkzQsZ0+S5Bmlze2WoFPlcFkuWVCljqYtlQcTVJojXGZxYvjo7HO3XbdtcVKOKiuBSSrlFKqVOM6aVWaCaXKNjK16M0krzzS86C5Z2vTmmxXmzoudf1lrIdevNJmvPjR8VhqKp8rHkkYUKyapOgGoZmWD413tHbdu9x3Cduyj7btfGeqXt3sP6d/ScY2l7XNPP+lTSrllqvRNEm3lml50NyytezOjY08Odm49stZDr9DGno475fn8e/L1cW3n3lXXvxYWPNxaejDybi1I0tOmQ0bMywfFOMz6F2qzlrMtlWld7cZbLTvbSsymOlyqlZlMqvNpsWszOsz4t7erhtZmG1Pbw2vZhmeL0OLTp1nmqUbMygf/Z);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 30px 5px 30px;
+}
+#h3_div{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+input{
+    width: 80%;
+    height: 20px;
+    margin-top: 10px;
+}
+
+
+#cont{
+    /* border: 2px solid red; */
+    width: 94%;
+    display: grid;
+ grid-template-columns: repeat(2,1fr);
+ margin: auto;
+ margin-top: 10px;
+ align-items: center;
+ box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+}
+
+
+
 }
